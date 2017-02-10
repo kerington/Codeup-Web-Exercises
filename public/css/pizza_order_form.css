@@ -1,0 +1,42 @@
+body {
+	background-image: url("img/vector-rustic-pizza-oven.jpg");
+	font-family: "Delius";
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: "Delius Unicase";
+
+}
+
+
+
+
+
+/*
+- Add background image.
+- Add margins around text so it is centered in page and has a solid background.
+- Organize topping choices to a scroll list WITH checkboxes.
+- DONE - Enter personal info first, then click through to create pizza.
+- DONE - After creating pizza, click through to enter payment info.
+- Add pizza photos to the pages? Top right corner?
+- *(ADD TO FORMS- Fieldset and Legend, Go to top of page, Styling,))
+*/
+
+
+
+/*
+a:link{
+	color:#823651;
+}
+
+a:hover{
+	color:#79745C;
+}
+
+a:visited{
+	color:#000;
+}
+
+a:active{
+	color:#D8AA96;
+}*/

@@ -1,0 +1,55 @@
+h1 {
+	margin-bottom: 0px;
+}
+
+.box{
+	border:1px black solid;
+	width:51px;
+	height:50px;
+	font-weight:bold;
+	color:#FFF;
+	padding:10px;
+	margin-top:50px;
+	margin-right:50px;
+	position:relative;
+	float:left;
+}
+
+.box>img{
+	position: absolute;
+	top:-40px;
+	right:-40px;
+}
+
+#box-red{
+	background-color: red;
+
+}
+#box-orange{
+	background-color: orange;
+}
+#box-yellow{
+	background-color: yellow;
+
+}
+#box-green{
+	background-color: green;
+	clear:left;
+}
+#box-blue{
+	background-color: blue;
+}
+#box-violet{
+	background-color: violet;
+}
+
+/*
+-No line breaks or paragraphs should be used. Use positioning,
+floats, and clears as appropriate.
+-DONE-Each colored box as a 1 pixel border.
+-DONE-The content area of each box is 50 pixels wide by 50 pixels high.
+-DONE-The overall size of each box is 72 pixels wide by 72 pixels high.
+-DONE-There is 50 pixels of space between the header and the boxes.
+-DONE-There is 50 pixels of space between the boxes themselves.
+-The Codeup arrow has been added to each box (download image below).
+*/

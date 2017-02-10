@@ -1,0 +1,34 @@
+h1,h2 {
+	color:#910009;
+	font-family: "Delius Unicase";
+	font-weight:700;
+}
+
+body {
+	background-image: url("/img/AquaGeoLines.png");
+	font-family: "Delius";
+}
+
+ul {
+	list-style: square;
+}
+
+th,td {
+	padding:7px;
+}
+
+a:link{
+	color:#823651;
+}
+
+a:hover{
+	color:#79745C;
+}
+
+a:visited{
+	color:#000;
+}
+
+a:active{
+	color:#D8AA96;
+}
