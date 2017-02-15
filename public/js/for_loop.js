@@ -32,6 +32,16 @@
 //     console.log('0');
 // }
 
+/*---OR---*/
+
+var numberOutput = 1;
+for (var i = 1; i <= 10; i++) {
+	numberOutput = (i % 10);
+	for (var j = 1; j < i; j++) {
+			numberOutput += String((i % 10));
+	}
+	console.log(numberOutput);
+}
 
 
 // /*--*/
@@ -68,9 +78,9 @@
 
 
 
-/*--*/
-/*-5 FOR LOOP*/
+// /*--*/
+// /*-5 FOR LOOP*/
 
-for (i = 100; i > 0; i-=5) {
-    console.log(i);
-}
+// for (i = 100; i > 0; i-=5) {
+//     console.log(i);
+// }
