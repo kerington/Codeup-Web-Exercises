@@ -1,6 +1,5 @@
---
-
-/*NUMBERS OUTPUT*/
+// /*--*/
+// /*NUMBERS OUTPUT*/
 
 // for (var i = 1; i <= 1; i++) {
 //     console.log('1');
@@ -33,9 +32,10 @@
 //     console.log('0');
 // }
 
---
 
-// /* RANDOM MULTIPLICATION TABLE */
+
+// /*--*/
+//  /*RANDOM MULTIPLICATION TABLE*/
 
 // var num = Math.floor(Math.random()* 10 + 1);
 // //use same logic from warmup 215 (math.random)
@@ -48,18 +48,29 @@
 // }
 
 
---
 
-/*RANDOM EVEN OR ODD*/
+// /*--*/
+// /*RANDOM EVEN OR ODD*/
 
-var oddOrEven = Math.floor((Math.random()) * (200 - 20)) + 10; }
+// var oddOrEven = 0;
 
-	function oddOrEven(x) {
-	  return ( x & 1 ) ? "odd" : "even";
-	}
+// for (var i = 0; i < 10; i++) {
+
+// 	 oddOrEven = Math.floor((Math.random()) * (200 - 20)) +20;
+		
+// 		if (oddOrEven %2 == 0) {
+// 			console.log(oddOrEven + " is even!"); 
+// 		}
+// 		else {
+// 			console.log(oddOrEven + " is odd!");
+// 		}
+// 	}
 
 
 
+/*--*/
+/*-5 FOR LOOP*/
 
-
-
+for (i = 100; i > 0; i-=5) {
+    console.log(i);
+}
