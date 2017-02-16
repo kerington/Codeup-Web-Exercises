@@ -1,0 +1,163 @@
+        GENERAL:
+~[[TO CONNECT TO SERVER!!]]
+1st- cd vagrant-lamp/
+(IF IT SAYS **Keris-MacBook-Pro:vagrant-lamp Kerington$ vagrant status
+Current machine states:
+
+vagrant                   poweroff (virtualbox)
+
+The VM is powered off. To restart the VM, simply run `vagrant up`**)
+2nd- Keris-MacBook-Pro:vagrant-lamp Kerington$ vagrant up]]~
+
+
+
+when you click a link or submit a form, you send a request
+
+TYPES OF REQUESTS: (method == type of request)
+**(TO link to stylesheet) <link rel-"stylesheet" href="web address">**
+
+**RESOURCES:**
+    W3Schools
+    MDN
+    youtube:devtips channel
+    CSS-Tricks
+
+
+        ~2/7~
+
+*GET* is a download request
+    clicking links is a GET request
+    typing in an address is a GET request
+    the forms that send GET requests
+        are usually searches
+
+*POST*
+    sending data
+
+*FORM* 
+    action is where the request -goes-
+    method = GET or POST
+
+((all form inputs need names- or else it doens't know what it's looking for!))
+((id's are social security numbers for forms, can't have 2 forms on the same doc with the same ID! This won't work...))
+(Can only create one request at a time, GET or POST)
+
+((ADD TO FORMS- Fieldset and Legend, Go to top of page, Styling,))
+((Selectors in CSS, organize from most to least specific! Also- Keep notes above each section rn for easy refrencing and make sure all code lines up appropriately))
+((to link a page to a page with a button, href the button!))
+((RADIO BUTTONS & CHECK BOXES, the id and name can reflect the option))
+((Adding style to a page? Use CSS instead of putting it directly on HTML document!))
+
+
+        ~2/8~
+
+-prefer to use classes (Id's more for JS)
+-Order of overwriting, whatever is last will override all styles before (for css style-if necessary.)
+-ID="#" classes="."
+
+
+        ~2/14~
+
+== equal to (value) ((EX: number OR string))
+=== equal to (type and value) ((EX: number AND string))
+!= not equal to (value)
+!= not equal to (type & value)
+> greater than
+< less than
+>= greater than or equal to
+<= less than or equal to
+
+
+        ~2/15~
+
+~~BOOLEANS~~
+((In JavaScript, the following values will evaluate to false.
+
+-false
+-null
+-undefined
+-0
+-"" or '' (empty string)
+-NaN (special constant for not-a-number)
+-----Any other values will evaluate to true.))
+
+~~LOGICAL OPERATORS~~
+&&- AND - always FALSE unless DOUBLE TRUE
+||- OR - always TRUE unless DOUBLE FALSE
+!- NOT - Result is OPPOSITE of input! (IE !false=true)
+!!- NOT NOT - Result is THE SAME of input! (IE !!false=false)
+    ~~ORDER~~
+    -NOT is evaluated before
+    -AND, which is evaluated before
+    -OR
+
+-Operations can be grouped by using parenthesis ()! These have higher precedence than other operators, therefore the result of this will be evaluated, and that result will be used to continue the logical operations. These can also be nested. 
+
+~~Functions~~
+Function + name + parameter + body(())
+
+~~TERNARY OPERATORS~~
+The conditional (ternary) operator is the only JavaScript operator that takes THREE OPERANDS. This operator is frequently used as a shortcut for the if statement.
+    Syntax: (condition) ? console.log(expr1) : console.log(expr2) 
+
+~~SCOPE~~
+The availability of variables.
+
+
+        ~2/16~
+(Iterating Arrays- ("var NAME = ['0', '1', '2', '3']")
+    ~~ EX:
+        shapes.forEach(function (element, index, array) {
+
+    // element is the shape name
+    // index is the iterator
+    // array is the shapes array itself))
+
+    console.log('The shape at index ' + index + ' is: ' + element);
+}); ~~END EX)
+
+((Manipulating Arrays))
+- SHIFT - removes an item from the beginning of an array.
+- POP - removes something from the end of an array.
+- UNSHIFT - adds an item to the beginning of an array.
+- PUSH - adds an item to the end of an array.
+
+((SPLICE))
+     - Add one or more elements to an array. Pass the start index of the modification, followed by a 0, followed by a comma separated list of items to add.
+     - Replace elements with splice instead of passing a 0 as the second parameter, you pass the number of items you'd like to remove.
+
+((REVERSE))
+    - Reverses your array.
+
+((SORT))
+    - converts items in the array to their string equivalent and order them (alphabetically) based on that value.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
