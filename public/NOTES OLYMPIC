@@ -132,11 +132,16 @@ The availability of variables.
 ((SORT))
     - converts items in the array to their string equivalent and order them (alphabetically) based on that value.
 
+((ALERT))
+    - sends a message (EX: "20% off this friday!!")
 
+((CONFIRM))
+    - confirms you want to do something (EX: "Are you sure you want to leave this great site?")
 
+((PROMPT))
+    - Asks a question (usually) 
 
-
-
+(())
 
 
 
