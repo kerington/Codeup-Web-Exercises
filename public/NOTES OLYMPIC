@@ -141,7 +141,15 @@ The availability of variables.
 ((PROMPT))
     - Asks a question (usually) 
 
-(())
+
+
+
+
+!!VOCAB--
+--Data types--
+    -strings (e.g. "dogs go woof!")
+    -numbers (e.g. 4, 10)
+    -booleans (e.g. false, 5 > 4)
 
 
 
