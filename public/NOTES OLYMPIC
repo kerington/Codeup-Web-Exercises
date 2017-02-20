@@ -139,7 +139,36 @@ The availability of variables.
     - confirms you want to do something (EX: "Are you sure you want to leave this great site?")
 
 ((PROMPT))
-    - Asks a question (usually) 
+    - Asks a question (usually) *Ask the user for an input*
+
+
+
+        ~2/20~
+-((Targeting by ID)) USE> var redBox = document.getElementById('redBox'); (GETTING ONE ELEMENT USING ID!)
+
+-((Targeting by Tag Name)) USE> var paragraphs = document.getElementById("p"); >>THEN<< console.log (paragraphs); = console logs the entire list >><< console.log (paragraphs[0]); = console logs a single element >><< for (var i = 0; i < paragraphs.length; i++) { = console logs all elements in the collection console.log(paragraphs[i]);
+}
+
+-(())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -150,6 +179,19 @@ The availability of variables.
     -strings (e.g. "dogs go woof!")
     -numbers (e.g. 4, 10)
     -booleans (e.g. false, 5 > 4)
+
+--Variables--
+We store data values in variables. We can bring back the values of these variables by typing the variable name.
+
+--Manipulating numbers & strings--
+
+    -comparisons (e.g. >, <=)
+    -modulo (e.g. %)
+    -string length (e.g. "Emily".length;)
+    -substrings (e.g. "hi".substring(0, 1);)
+    -console.log( ) 
+    -Prints into the console whatever we put in the parentheses.
+
 
 
 
