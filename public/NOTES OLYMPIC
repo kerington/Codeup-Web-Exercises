@@ -149,7 +149,20 @@ The availability of variables.
 -((Targeting by Tag Name)) USE> var paragraphs = document.getElementById("p"); >>THEN<< console.log (paragraphs); = console logs the entire list >><< console.log (paragraphs[0]); = console logs a single element >><< for (var i = 0; i < paragraphs.length; i++) { = console logs all elements in the collection console.log(paragraphs[i]);
 }
 
--(())
+-((QUESTIONS/REVIEW))
+
+- HTML element -
+    document.getElementById("shuffle");
+- NodeList of HTML elements with that class name -
+    document.getElementsByClassName("container");
+- NodeList of HTML elements with that HTML tag - 
+    document.getElementsByTagName("div");
+- NodeList can't forEach
+- element.addEventListener('click', function() {
+    //whatever code we write inside here
+});
+
+
 
 
 
