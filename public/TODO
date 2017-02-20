@@ -2,3 +2,22 @@ TODO:
 
 - work on Planets Array JS exercise. Debug.
 - (DONE)figure out how to create UL for planets_string.js <<<why it's not showing up. (STUDY THIS!)
+
+
+practice
+
+1.create an html page that says hello world
+	make a button that changes the text to goodbye world
+
+2. make an unordered list of program 
+
+
+**JS CALCULATOR:**
+1- Pick a starting place - look or functionality
+2- "Instructions" are specifications from a client
+3- Read the instructions (carefully, methodically, with an attention to detail)
+4- Write out the real word steps into pseudo-code
+5- Piece by piece, turn each tiny little step into code
+
+// add event lister to every button
+// when user hits 1, show 1 numeral inside the display
