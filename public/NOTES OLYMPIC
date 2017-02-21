@@ -105,6 +105,7 @@ The availability of variables.
 
 
         ~2/16~
+
 (Iterating Arrays- ("var NAME = ['0', '1', '2', '3']")
     ~~ EX:
         shapes.forEach(function (element, index, array) {
@@ -144,6 +145,7 @@ The availability of variables.
 
 
         ~2/20~
+        
 -((Targeting by ID)) USE> var redBox = document.getElementById('redBox'); (GETTING ONE ELEMENT USING ID!)
 
 -((Targeting by Tag Name)) USE> var paragraphs = document.getElementById("p"); >>THEN<< console.log (paragraphs); = console logs the entire list >><< console.log (paragraphs[0]); = console logs a single element >><< for (var i = 0; i < paragraphs.length; i++) { = console logs all elements in the collection console.log(paragraphs[i]);
