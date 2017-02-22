@@ -17,14 +17,15 @@
 
     <!-- Script to show address on map -->
     <script type="text/javascript">
-    (function() {
+    // (function() {
         "use strict";
 
-
+        var lat;
+        var lng;
         
 
         // Set our address to geocode
-        var address = "600 Central Ave SE A, Albuquerque, NM, 87102";
+        var address = "700 Central Ave SE, Albuquerque, NM, 87102";
 
         // Init geocoder object
         var geocoder = new google.maps.Geocoder();
@@ -37,6 +38,14 @@
 
                // Recenter the map over the address
                map.setCenter(results[0].geometry.location);
+              lat=(results[0].geometry.location.lat());
+              lng=(results[0].geometry.location.lng());
+              var holyCow = { "lat": lat, "lng": lng };
+
+            var marker = new google.maps.Marker({
+            position: holyCow,
+            map: map
+        });
            } else {
 
                // Show an error message with the status if our request fails
@@ -47,7 +56,7 @@
         // Set our map options
         var mapOptions = {
             // Set the zoom level
-            zoom: 20,
+            zoom: 18,
 
             // This sets the center of the map at our location
             center: {
@@ -55,9 +64,13 @@
                 lng: -98.489602
             }
         };
-
+       
         // Render the map
         var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-    })();
+
+        
+
+
+    // })();
     </script>
 </body>
