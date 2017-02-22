@@ -1,76 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style type="text/css">
-        #map-canvas {
-            width: 550px;
-            height: 350px;
-        }
-    </style>
+	<style type="text/css">
+		#map-canvas {
+			width: 550px;
+			height: 350px;
+		}
+	</style>
 </head>
 <body>
-    <!-- div to hold map -->
-    <div id="map-canvas"></div>
+	<!-- div to hold map -->
+	<div id="map-canvas"></div>
 
-    <!-- Load the Google Maps API [DON'T FORGET TO USE A KEY] -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo_TneF5gsOWvJoUxbOX877lF9GF8d9PE"></script>
+	<!-- Load the Google Maps API [DON'T FORGET TO USE A KEY] -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo_TneF5gsOWvJoUxbOX877lF9GF8d9PE"></script>
 
-    <!-- Script to show address on map -->
-    <script type="text/javascript">
-    // (function() {
-        "use strict";
+	<!-- Script to show address on map -->
+	<script type="text/javascript">
+	// (function() {
+		"use strict";
 
-        var lat;
-        var lng;
-        
+		var lat;
+		var lng;
+		
 
-        // Set our address to geocode
-        var address = "700 Central Ave SE, Albuquerque, NM, 87102";
+		// Set our address to geocode
+		var address = "700 Central Ave SE, Albuquerque, NM, 87102";
 
-        // Init geocoder object
-        var geocoder = new google.maps.Geocoder();
+		// Init geocoder object
+		var geocoder = new google.maps.Geocoder();
 
-        // Geocode our address
-        geocoder.geocode({ "address": address }, function(results, status) {
+		// Geocode our address
+		geocoder.geocode({ "address": address }, function(results, status) {
 
-           // Check for a successful result
-           if (status == google.maps.GeocoderStatus.OK) {
+		   // Check for a successful result
+		   if (status == google.maps.GeocoderStatus.OK) {
 
-               // Recenter the map over the address
-               map.setCenter(results[0].geometry.location);
-              lat=(results[0].geometry.location.lat());
-              lng=(results[0].geometry.location.lng());
-              var holyCow = { "lat": lat, "lng": lng };
+			   // Recenter the map over the address
+			   map.setCenter(results[0].geometry.location);
+			  lat=(results[0].geometry.location.lat());
+			  lng=(results[0].geometry.location.lng());
+			  var holyCow = { "lat": lat, "lng": lng };
 
-            var marker = new google.maps.Marker({
-            position: holyCow,
-            map: map
-        });
-           } else {
+				var marker = new google.maps.Marker({
+				position: holyCow,
+				map: map
+			});
 
-               // Show an error message with the status if our request fails
-               alert("Geocoding was not successful - STATUS: " + status);
-           }
-        });
+                // Create a new infoWindow object with content
+                var infowindow = new google.maps.InfoWindow({
+                    content: "Holy Cow offers a mouthwatering selection of burgers, sandwiches, salads, and an awesome selection of beer and wine. Burgers to die for! (505) 242-2991."
+                });
 
-        // Set our map options
-        var mapOptions = {
-            // Set the zoom level
-            zoom: 18,
-
-            // This sets the center of the map at our location
-            center: {
-                lat:  29.426791,
-                lng: -98.489602
-            }
-        };
-       
-        // Render the map
-        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-
-        
+                // Open the window using our map and marker
+                infowindow.open(map, marker);
 
 
-    // })();
-    </script>
+		   } else {
+
+			   // Show an error message with the status if our request fails
+			   alert("Geocoding was not successful - STATUS: " + status);
+		   }
+		});
+
+		// Set our map options
+		var mapOptions = {
+			// Set the zoom level
+			zoom: 18,
+
+			// This sets the center of the map at our location
+			center: {
+				lat:  29.426791,
+				lng: -98.489602
+			}
+		};
+	   
+		// Render the map
+		var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+		
+
+
+	// })();
+	</script>
 </body>
