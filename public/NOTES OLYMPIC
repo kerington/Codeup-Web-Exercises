@@ -142,6 +142,8 @@ The availability of variables.
 ((PROMPT))
     - Asks a question (usually) *Ask the user for an input*
 
+((STRING))
+    - Correct way to return the length of a string: 'string'.length
 
 
         ~2/20~
@@ -165,14 +167,39 @@ The availability of variables.
 });
 
 
+        ~2/22~
+-((DON'T FORGET!!)) Add Height and Width to all maps on websites (duh!)
 
 
+        ~2/23~
+-((TO ADD A LINK TO A MAPS WINDOW))
+    var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
+      '<div id="bodyContent">'+
+      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+      'sandstone rock formation in the southern part of the '+
+      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+      'south west of the nearest large town, Alice Springs; 450&#160;km '+
+      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+      'Aboriginal people of the area. It has many springs, waterholes, '+
+      'rock caves and ancient paintings. Uluru is listed as a World '+
+      'Heritage Site.</p>'+
+      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+      '(last visited June 22, 2009).</p>'+
+      '</div>'+
+      '</div>';
 
 
-
-
-
-
+-((ID Selector #id — Selects a single element with the given id attribute.
+Class Selector .class — Selects all elements with the given class.
+Element Selector element — Selects all elements with the given tag name.
+Multiple Selector selector1, selector2, selectorN — Selects the combined results of all the specified selectors.
+All Selector * — Selects all elements.))
 
 
 
@@ -213,7 +240,7 @@ We store data values in variables. We can bring back the values of these variabl
 
 
 
-
+** Some more time to complete quizzes. It's easy to feel super rushed during the 30 minutes we have and that means its VERY easy to miss things on questions (such as "what does NO do blah blah") b/c we're rushing through to answer everything in time so we don't miss questions by not answering them.
 
 
 
