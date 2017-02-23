@@ -32,7 +32,6 @@
 		
 	// 	//Creates a pop-up alert//
 	// 	alert("Dom loaded");
-
 	// });
 
 
@@ -40,27 +39,42 @@
 	// $(document).ready(function() {
 	// var contents = $('#codeup').html();
 	// alert(contents);
-
 	// });
 
 	//THIS IS REPEATING THE FUNCTION DIRECTLY ABOVE!//
 	// $(document).ready(function() {
 	// var contents = $('#codeup').html();
 	// alert(contents);
-
 	// });
 
 	// THIS IS CALLING THE ID OF "listItemOne" TO "ALERT(POP UP) THE VIEWER"//
 	// $(document).ready(function() {
 	// var contents = $('#listItemOne').html();
 	// alert(contents);
-
 	// });
 
-	//ONLY USE NAME: "BORDER"! DO NOT NEED TO SPECIFY WHAT PART OF THE BORDER YOU ARE CHANGING. ORDER TO ENTER CHANGES IS: SIZE, STYLE, THEN COLOR.//
-	$(document).ready(function() {
-		$(".codeup").css("border", "1px solid red");
+	//THIS IS CALLING THE CLASS OF "codeup" AND CHANGING THE BORDER.
+		//ONLY USE NAME: "BORDER"! DO NOT NEED TO SPECIFY WHAT PART OF THE BORDER YOU ARE CHANGING. ORDER TO ENTER CHANGES IS: SIZE, STYLE, THEN COLOR.//
+	// $(document).ready(function() {
+	// 	$(".codeup").css("border", "1px solid red");
+	// });
 
+	//CHANGE FONT SIZE OF ALL "li" ITEMS//
+	$(document).ready(function(){
+		$('li').css('font-size', '20px');
+	});
+
+
+	//CHANGE BACKGROUND COLOR (HIGHLIGHT) ALL h1, p, and li ELEMENTS//
+	$(document).ready(function(){
+		$('h1, p, li').css('background-color', 'yellow')
+	});
+
+
+	//CREATE A JQUERY STATEMENT TO ALERT THE CONTENTS OF h1 ELEMENTS//
+	$(document).ready(function() {
+	var contents = $('h1').html();
+	alert(contents);
 	});
 
 	</script>
