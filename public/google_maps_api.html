@@ -43,13 +43,14 @@
 			  var holyCow = { "lat": lat, "lng": lng };
 
 				var marker = new google.maps.Marker({
-				position: holyCow,
+				animation: google.maps.Animation.DROP,
+                position: holyCow,
 				map: map
 			});
 
                 // Create a new infoWindow object with content
                 var infowindow = new google.maps.InfoWindow({
-                    content: "Holy Cow offers a mouthwatering selection of burgers, sandwiches, salads, and an awesome selection of beer and wine. Burgers to die for! (505) 242-2991."
+                    content: "Holy Cow offers a mouthwatering selection of burgers, sandwiches, salads, and an awesome selection of beer and wine."
                 });
 
                 // Open the window using our map and marker
@@ -66,7 +67,7 @@
 		// Set our map options
 		var mapOptions = {
 			// Set the zoom level
-			zoom: 25,
+			zoom: 20,
 
 			// This sets the center of the map at our location
 			center: {
