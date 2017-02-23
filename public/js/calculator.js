@@ -6,6 +6,12 @@ var middleInput = document.getElementById('boxMid');
     
 
         // FOR BOX LEFT
+var band;
+band.shred = function() {
+    console.log('RAAAAAAAAAA!!!!');
+}
+
+
     var listener = function (event){
 
         if (middleInput.innerText === ""){
@@ -175,6 +181,12 @@ var middleInput = document.getElementById('boxMid');
           }
     console.log(event.keyCode);
     }
+
+
+
+
+console.log(10 % 3);
+
 
 
         //ELEMENTS
