@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Title</title>
+</head>
+<body>
+
+	<script
+  src="http://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  	
+
+<div id="First jquery exercise"></div>
+
+	<h1 id="codeup">Hello Codeup!</h1>
+		<p class="paragraph1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dolorum doloribus iure repellat, eum obcaecati veritatis aperiam provident? Nesciunt, incidunt illo vero. Alias deleniti repudiandae beatae magnam temporibus laborum error!</p>
+		<p class="berryText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae vel atque, esse mollitia quia, vitae itaque numquam veritatis autem enim aliquid quos iste, quas possimus unde. Dicta laudantium exercitationem ab.</p>
+			<ul>Unordered List</ul>
+				<li id="listItemOne">List Item 1</li>
+				<li>List Item 2</li>
+				<li>List Item 3</li>
+
+
+<script>
+
+	// THIS IS "ALERTING(POP UP)" THE VIEWER OF THE MESSAGE "Dom loaded"!// 
+	$(document).ready(function() {
+		"use strict";
+		
+		//Creates a pop-up alert//
+		alert("Dom loaded");
+
+	});
+
+
+	// THIS IS CALLING THE ID OF "codeup" TO "ALERT(POP UP) THE VIEWER"//
+	$(document).ready(function() {
+	var contents = $('#codeup').html();
+	alert(contents);
+
+	});
+
+	//THIS IS REPEATING THE FUNCTION DIRECTLY ABOVE!//
+	// $(document).ready(function() {
+	// var contents = $('#codeup').html();
+	// alert(contents);
+
+	// });
+
+	// THIS IS CALLING THE ID OF "listItemOne" TO "ALERT(POP UP) THE VIEWER"//
+	$(document).ready(function() {
+	var contents = $('#listItemOne').html();
+	alert(contents);
+
+	});
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
+<!--TO ALLOW JQUERY-->
+
+<!-- Use jQuery to select an element by the id. Alert the contents of the element.
+
+Update the jQuery code to select and alert a different id.
+
+Use the same id on 2 elements. How does this change the jQuery selection?
+
+Remove the duplicate id. Each id should be unique on that page. -->
