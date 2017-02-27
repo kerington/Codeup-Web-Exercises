@@ -202,12 +202,26 @@ Multiple Selector selector1, selector2, selectorN — Selects the combined resul
 All Selector * — Selects all elements.))
 
 
+-((KEYBOARD EVENTS))
+    - .keydown() — Bind an event handler to the "keydown" JavaScript event or trigger that event on an element. (COUNTS ALL KEY STROKES!!)***More for making restrictions in your input!***
+    
+    - .keypress() — Bind an event handler to the "keypress" JavaScript event or trigger that event on an element.
+
+    - .keyup() — Bind an event handler to the "keyup" JavaScript event or trigger that event on an element.
 
 
+      ~ 2/27 ~
 
-
-
-
+      var request = $.get(url);
+    //.fail() is the callback function that runs if there was something wrong with the request or data
+    request.fail(function(data) {
+      console.log(data);
+    });
+    
+    //.done() is the callback function that runs if the response is good to go. -- MUST HAVE DATA IN THE ()! OTHERWISE, IT WILL NOT WORK
+    request.done(function(data, status) {
+      console.log(data);
+    })
 
 
 
@@ -234,13 +248,15 @@ We store data values in variables. We can bring back the values of these variabl
     -console.log( ) 
     -Prints into the console whatever we put in the parentheses.
 
+* Can't do POST to JSON - only GET.
 
 
 
 
 
+** 
 
-** Some more time to complete quizzes. It's easy to feel super rushed during the 30 minutes we have and that means its VERY easy to miss things on questions (such as "what does NO do blah blah") b/c we're rushing through to answer everything in time so we don't miss questions by not answering them.
+
 
 
 
