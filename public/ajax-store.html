@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Store</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+    <h1>My Tool Store</h1>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>TITLE</th>
+                <th>QUANTITY</th>
+                <th>CATEGORIES</th>
+                <th>PRICE</th>
+            </tr>
+        </thead>
+        <tbody id="products"></tbody>
+    </table>
+
+    <button id="refresh" type="button" class="btn btn-success btn-lg btn-block">Click to refresh inventory!</button>
+   
+
+    <script
+          src="http://code.jquery.com/jquery-2.2.4.min.js"
+          integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+          crossorigin="anonymous"></script>
+        
+    <script>
+        "use strict";
+
+        function makeRequest(){
+            var inventory = $.get("/data/inventory.json").done(function(tools){
+                console.log(tools);
+
+                $.each(tools, function(index, tool){
+                    var content = '<tr>';
+                    content += '<td>' + tool.title + '</td>';
+                    content += '<td>' + tool.quantity + '</td>';
+                    content += '<td>' + tool.categories + '</td>';
+                    content += '<td>' + tool.price + '</td>';
+                    content += '</tr>'
+                   $("#products").append(content);
+                });
+            });
+        }
+        makeRequest();
+        $("#refresh").click(function(){
+            $("#products").html("");
+            makeRequest();
+
+        });
+// put the request in a function, name= what names sense; add to click event to whatever we want to create in HTML; make button in HTML, then wrap script in function, when targeting button in DOM .click, then have it trigger get request.
+        </script>
+<!-- 1. DONE ** Your online tool store should load data from the JSON file using a get request and append the data to the table. You will need to use either $.ajax() or $.get(), and a .done() callback.
+
+2. DONE ** Add some new entries to inventory.json and see how the data on the page gets updated.
+
+3. Add a "Refresh" button that will load inventory.json for you without having to refresh the entire page.
+
+4. Add Twitter Bootstrap to your online store with some custom CSS to make the style your own. -->
+    </body>
+</html>
