@@ -8,7 +8,7 @@
 
 	<div id="First jquery exercise"></div>
 
-	<h1 id="codeup">Hello Codeup!</h1>
+	<h1 id="btn-title">Hello Codeup!</h1>
 		<p class="paragraph1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dolorum doloribus iure repellat, eum obcaecati veritatis aperiam provident? Nesciunt, incidunt illo vero. Alias deleniti repudiandae beatae magnam temporibus laborum error!</p>
 		<p class="codeup">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae vel atque, esse mollitia quia, vitae itaque numquam veritatis autem enim aliquid quos iste, quas possimus unde. Dicta laudantium exercitationem ab.</p>
 		<p class="codeup">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate laboriosam non voluptatem? Quis repellendus ratione autem ab temporibus sit harum aperiam earum explicabo culpa! Veniam temporibus rerum iure quo illum.</p>
@@ -60,23 +60,60 @@
 	// });
 
 	//CHANGE FONT SIZE OF ALL "li" ITEMS//
-	$(document).ready(function(){
-		$('li').css('font-size', '20px');
-	});
+	// $(document).ready(function(){
+	// 	$('li').css('font-size', '20px');
+	// });
 
 
 	//CHANGE BACKGROUND COLOR (HIGHLIGHT) ALL h1, p, and li ELEMENTS//
-	$(document).ready(function(){
-		$('h1, p, li').css('background-color', 'yellow')
-	});
+	// $(document).ready(function(){
+	// 	$('h1, p, li').css('background-color', 'yellow')
+	// });
 
 
 	//CREATE A JQUERY STATEMENT TO ALERT THE CONTENTS OF h1 ELEMENTS//
-	$(document).ready(function() {
-	var contents = $('h1').html();
-	alert(contents);
-	});
+	// $(document).ready(function() {
+	// 	var contents = $('h1').html();
+	// 	alert(contents);
+	// }); 
 
+
+	//TO CREATE A POP UP WHEN SOMETHING IS CLICKED
+	// $(document).ready(function(){
+	// 	$("#btn-title").click(function(){
+	// 		alert("It works!");
+	// 	});
+	// });
+
+	//CHANGE THE BACKGROUND COLOR OF AN H1 ELEMENT WHEN CLIKED
+	
+	$(document).ready(function() {
+
+		$("h1").click(function(){
+			$(this).css("background-color", "blue");
+		});
+
+		$("p").dblclick(function(){
+			$(this).css("font-size", "18px");
+		});
+
+		$("li").hover(function(){
+			$(this).css("color", "red");
+		},
+		function() {
+			$(this).css("color", "black");
+
+		});
+
+
+
+	//THE ('*') IS A WILDCARD, AND WILL DO SOMETHING TO ALL THE ELEMENTS ON THE PAGE! HELPFUL FOR FINDING ERRORS AND SUCH.
+	// $(document).ready(function(){
+	// 	$('*').css('border', '2px solid #0F0')
+	// });
+
+
+});
 	</script>
 
 </body>
