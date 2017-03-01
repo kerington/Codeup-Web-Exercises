@@ -17,9 +17,14 @@ function getWeather() {
         alert("Failed to load: " + status);
     }).done(function(data) {
         var htmlString = "";
-        data.list.forEach (function(weather){
-        htmlString += "<div class='max'>" + weather.temp.max + " / " + weather.temp.min + "</div>";
-        
+        data.list.forEach (function(object){
+        htmlString += "<div class='max'>" + parseInt(object.temp.max) + "&deg;" + " / " + parseInt(object.temp.min) + "&deg;" + "<br>"
+        htmlString += "<img src='http://openweathermap.org/img/w/" + object.weather[0].icon + ".png'>" //ADD SOMETHING AT THE END think of how you're targeting array//
+        // http:openweathermap.org/img/w/[icon].png
+        htmlString += "<p>" + "<b>Clouds:</b> " + object.weather[0].description + "</p>"
+        htmlString += "<p>" + "<b>Humidity:</b> " + parseInt(object.humidity) + "%" + "</p>"
+        htmlString += "<p>" + "<b>Wind Pressure:</b> " + object.pressure + "</p>" + "</div>"
+        // htmlString += 
         console.log(data.list);
         });
             $("#weather").html(htmlString)
@@ -29,6 +34,11 @@ function getWeather() {
 getWeather();
 
 });
+
+
+
+
+//clouds, humidity, wind, pressure.
 
 
 // practice writing console.logs of various parts of the OpenWeatherMap object...
