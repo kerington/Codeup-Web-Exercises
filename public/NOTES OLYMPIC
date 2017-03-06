@@ -1,12 +1,13 @@
         GENERAL:
 ~[[TO CONNECT TO SERVER!!]]
-1st- cd vagrant-lamp/
-(IF IT SAYS **Keris-MacBook-Pro:vagrant-lamp Kerington$ vagrant status
+1- cd vagrant-lamp/
+2- (IF IT SAYS) **Keris-MacBook-Pro:vagrant-lamp Kerington$ vagrant status
 Current machine states:
 
 vagrant                   poweroff (virtualbox)
 
-The VM is powered off. To restart the VM, simply run `vagrant up`**)
+The VM is powered off. To restart the VM, simply run
+3- `vagrant up`**)
 2nd- Keris-MacBook-Pro:vagrant-lamp Kerington$ vagrant up]]~
 
 
