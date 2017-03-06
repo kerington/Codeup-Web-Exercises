@@ -3,14 +3,6 @@
 var leftInput = document.getElementById('boxLeft');
 var rightInput = document.getElementById('boxRight');
 var middleInput = document.getElementById('boxMid');
-    
-
-        // FOR BOX LEFT
-var band;
-band.shred = function() {
-    console.log('RAAAAAAAAAA!!!!');
-}
-
 
     var listener = function (event){
 
