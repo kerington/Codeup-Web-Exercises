@@ -10,7 +10,12 @@ The VM is powered off. To restart the VM, simply run
 3- `vagrant up`**)
 2nd- Keris-MacBook-Pro:vagrant-lamp Kerington$ vagrant up]]~
 
+~[[TO CREATE A NEW DEV SITE IN MY DEV ENVIRONMENT!!]]
 
+ansible-playbook ansible/playbooks/vagrant/site.php.yml
+
+
+==================================================================
 
 when you click a link or submit a form, you send a request
 
