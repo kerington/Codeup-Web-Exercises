@@ -1,0 +1,17 @@
+To log into PHP-
+	- vagrant ssh
+	- php -a
+
+
+
+HELPFUL:
+
+	~ var_dump($NAME) - this will tell you what it is!
+
+
+
+
+REMEMBER:
+
+	~ single quotes '' pulls the VARIABLE.
+	~ double quotes "" pulls the VALUE.
