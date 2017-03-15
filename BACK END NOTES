@@ -1,0 +1,13 @@
+BACK END NOTES
+
+There are 8 primitive data types in PHP:
+
+1. boolean
+2. integer
+3. float (floating-point number, aka double)
+4. string
+5. array
+6. object
+7. resource
+8. NULL
+
