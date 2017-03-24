@@ -1,0 +1,27 @@
+#heading {
+	font-family: 'Nova Oval', cursive;
+	font-size: 3.5em;
+	text-align: center;
+	color: #78A5A3;
+	margin-top: 50px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	width: 100%;
+}
+body {
+	background-color: #444C5C;
+	font-family: 'Dosis', sans-serif;
+	font-size: 2.5em;
+	text-align: center;
+	color: #E1B16A;
+	width: 100%;
+}
+
+.table-hover {
+	background-color: #444C5C;
+	font-family: 'Dosis', sans-serif;
+	text-align: center;
+	color: #E1B16A;
+	width: 100%;
+}

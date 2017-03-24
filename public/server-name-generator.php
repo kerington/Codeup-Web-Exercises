@@ -1,6 +1,6 @@
 <?php
 
-$adj = array("Different", "Basic", "Known", "Difficult", "Useful", "Emotional", "Funny", "Strong", "Interesting", "Happy", "Nice", "Wonderful");
+$adj = array("Different", "Basic", "Famous", "Difficult", "Useful", "Emotional", "Funny", "Strong", "Interesting", "Happy", "Nice", "Wonderful");
 $randomAdj = array_rand($adj,1);
 
 //=============================
@@ -35,9 +35,9 @@ $randomNoun = array_rand($noun,1);
 	<h1>Server Name Generator:</h1>
 
 	<p>
-	<?php echo "'" . $adj[$randomAdj] . " ";
-	echo $noun[$randomNoun] . "'" . PHP_EOL;
-	?></p>
+	<?= "'" . $adj[$randomAdj] . " ";?>
+	<?= $noun[$randomNoun] . "'" . PHP_EOL;?>
+	</p>
 
     <!-- ** THIS ALWAYS GOES AT THE END OF THE BODY! ** -->
         <!-- jQuery Version 2.2.4 -->
