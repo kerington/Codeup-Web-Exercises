@@ -1,13 +1,22 @@
 <?php
 
-$adj = array("Different", "Basic", "Famous", "Difficult", "Useful", "Emotional", "Funny", "Strong", "Interesting", "Happy", "Nice", "Wonderful");
-$randomAdj = array_rand($adj,1);
+function pageController(){
+	$adj = array("Different", "Basic", "Famous", "Difficult", "Useful", "Emotional", "Vivacious", "Strong", "Interesting", "Lethal", "Vulgar", "Wonderful");
+	$randomAdj = array_rand($adj);
 
-//=============================
+	//=============================
 
-$noun = array("Queens", "Beyonce", "Cats", "Worlds", "Cupcakes", "Nature", "Ryan Gosling", "Blueberries", "Crayons", "Tacos", "Baby Goats", "Braids");
+	$noun = array("Queens", "Beyonce", "Cats", "Worlds", "Cupcakes", "Nature", "Ryan_Gosling", "Blueberries", "Crayons", "Tacos", "Baby_Goats", "Braids");
 
-$randomNoun = array_rand($noun,1);
+	$randomNoun = array_rand($noun);
+
+	$data = array();
+	$data["serverName"] = $adj[$randomAdj] . "_" . $noun[$randomNoun];
+	return $data;
+}
+
+extract(pageController());
+
 ?>
 
 <!DOCTYPE html>
@@ -35,8 +44,8 @@ $randomNoun = array_rand($noun,1);
 	<h1>Server Name Generator:</h1>
 
 	<p>
-	<?= "'" . $adj[$randomAdj] . " ";?>
-	<?= $noun[$randomNoun] . "'" . PHP_EOL;?>
+	<?= $serverName
+	?>
 	</p>
 
     <!-- ** THIS ALWAYS GOES AT THE END OF THE BODY! ** -->
