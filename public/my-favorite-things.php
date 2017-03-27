@@ -1,6 +1,14 @@
 <?php
+function pageController(){
+  $faveThings = array("Raindrops On Roses", "And Whiskers On Kittens.", "Bright Copper Kettles", "And Warm Woolen Mittens", "Brown Paper Packages Tied Up With Strings", "These are a few of my faaaavorite things.");
+    
+    $data = array();
+    $data['favoritesArray'] = $faveThings;
 
-$faveThings = array("Raindrops On Roses", "And Whiskers On Kittens.", "Bright Copper Kettles", "And Warm Woolen Mittens", "Brown Paper Packages Tied Up With Strings", "These are a few of my faaaavorite things.");
+    return($data);
+} 
+
+extract(pageController());
 
 ?>
 
@@ -34,11 +42,11 @@ $faveThings = array("Raindrops On Roses", "And Whiskers On Kittens.", "Bright Co
 		<tr>
 			<th id = heading>Favorite Things</th>
 		</tr>
-			<?php foreach ($faveThings as $key => $value) { ?>
+			<?php foreach ($favoritesArray as $value): ?>
 				<tr>
 					<td><?= $value ?></td>
 				</tr>
-			<?php } ?>
+			<?php endforeach; ?>
 	</table>
 
 
