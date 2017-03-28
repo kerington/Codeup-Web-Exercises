@@ -1,13 +1,14 @@
 <?php
 session_start();
-var_dump($_SESSION);
 
-if(!isset($_SESSION['logged_in_user'])){ 
-    header("Location: http://codeup.dev/login.php");
-}
+	// remove all session variables
+	session_unset(); 
 
+	// destroy the session 
+	session_destroy(); 
 ?>
 
+<!-- HTML -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,13 +25,14 @@ if(!isset($_SESSION['logged_in_user'])){
 			font-family: 'Space Mono', monospace;
 			font-size: 3em;
 		}
+
+
 	</style>
-	<title>Authorized</title>
+	<title>Logged Out</title>
 </head>
 <body>
-	<h1>Welcome, <? ??? USERNAME ??? ?></h1>
-	<img src="/img/happysloth.jpg"><br><br>
-	<a href="/logout.php"><big>CLICK HERE</big></a> TO LOG OUT
+	<h1>You are now logged out.</h1>
+	<a href="/login.php"><big>CLICK HERE</big></a> TO LOG IN.
 	<br><br><br><br><br><br>
 </body>
 </html>
