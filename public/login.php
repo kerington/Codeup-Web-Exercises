@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-var_dump($_POST);
+// var_dump($_POST);
 
 $sessionId = session_id();
 // $viewCount = isset($_SESSION['view_count']) ? $_SESSION['view_count'] : 0;
@@ -11,20 +11,23 @@ $sessionId = session_id();
 // $_SESSION['view_count'] = $viewCount;
 
 
-//if(!empty($_GET) || !empty($_POST)) 
+//if(!empty($_GET) || !empty($_POST))
 //THE ABOVE IS SAME AS THE BELOW
 if (isset($_POST['username']) && isset($_POST['password'])) {
 	if ($_POST['username'] == 'guest' && $_POST ['password'] == 'password') {
 		$_SESSION['logged_in_user'] = htmlspecialchars(strip_tags($_POST['username']) && ($_POST['password']));
 		if (isset($_SESSION['logged_in_user'])) {
-			header('location: /authorized.php'); 
+			header('location: /authorized.php');
 		}
 	} else {
 		print ("<h1>ACCESS DENIED</h1><h2><em>Please try again.</em></h2>");
-	}
+	} 
 } else {
-	print("<h1>CIA LOGIN:</h1>");
+		print ("<h1>LOG IN:</h1>");
 }
+// else {
+// 	print("<h1>Login, man:</h1>");
+// }
 
 // $username = isset($_POST['username']) ? $_POST['username'] : "Guest";
 
@@ -34,37 +37,32 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 <!DOCTYPE html>
 <html>
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Raleway|Space+Mono" rel="stylesheet">
-	<style type="text/css">
-		body {
-			text-align: center;
-			background-color: black;
-			color: white;
-			font-family: 'Raleway', sans-serif;
-
-		}
-		h1 {
-			color:red;
-			font-family: 'Space Mono', monospace;
-			font-size: 3em;
-		}
-	</style>
+	<link rel= "stylesheet" type="text/css" href="/css/loginphp.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Palanquin+Dark" rel="stylesheet">
 	<title>Login</title>
 </head>
 <body>
 
-	<form action="login.php" method="POST">
+<div class="container">
+	<div class="login-container">
+		<div id="output"></div>
+		<div class="avatar"></div>
+		<div class="form-box">
+			<form action="login.php" method="POST">
 		<p>
 			<label for="username">Username:</label>
-			<input type="text" name="username" id="username" placeholder="Enter Username Here" required autofocus>
+			<input type="text" name="username" id="username" placeholder="username" required autofocus>
 		</p>
-
 		<p>
 			<label for="password">Password:</label>
-			<input type="password" name="password" id="password" placeholder="Enter Password Here" required>
+			<input type="password" name="password" id="password" placeholder="password" required>
 		</p>
 
-		<button type="submit">Login</button> 
+		<button class="btn btn-info btn-block login" type="submit">Login</button>
+      </form>
+    </div>
+	</div>
+</div>
 </body>
 </html>
 
