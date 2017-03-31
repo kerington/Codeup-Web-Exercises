@@ -1,5 +1,9 @@
 <?php
+
+// require_once "input.php"
 session_start();
+
+require_once "indexphp.php";
 
 // var_dump($_POST);
 
@@ -22,9 +26,12 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 	} else {
 		print ("<h1>ACCESS DENIED</h1><h2><em>Please try again.</em></h2>");
 	} 
-} else {
-		print ("<h1>LOG IN:</h1>");
+	} else {
+		print "<h1>LOG IN</h1>";
 }
+// else {
+// 		print ("<h1>LOG IN</h1>");
+// }
 // else {
 // 	print("<h1>Login, man:</h1>");
 // }
@@ -58,13 +65,14 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 			<input type="password" name="password" id="password" placeholder="password" required>
 		</p>
 
-		<button class="btn btn-info btn-block login" type="submit">Login</button>
+		<button class="btn btn-info btn-block login" type="submit">Let's Go!</button>
       </form>
     </div>
 	</div>
 </div>
 </body>
 </html>
+
 
 <!--DONE--> <!-- Open the login.php page. If the correct username and password are sent, assign a session key called logged_in_user to the username of the logged in user. -->
 

@@ -1,5 +1,7 @@
 <?php
 
+require 'functions.php';
+
 function pageController(){
     $data = [];
     if (isset($_GET['i'])){

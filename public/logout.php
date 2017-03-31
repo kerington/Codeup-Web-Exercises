@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+require_once "indexphp.php";
+
 	// remove all session variables
 	session_unset(); 
 
@@ -12,28 +14,13 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Raleway|Space+Mono" rel="stylesheet">
-	<style type="text/css">
-		body {
-			text-align: center;
-			background-color: black;
-			color: white;
-			font-family: 'Raleway', sans-serif;
-		}
-		h1 {
-			color:red;
-			font-family: 'Space Mono', monospace;
-			font-size: 3em;
-		}
-
-
-	</style>
+	<link rel= "stylesheet" type="text/css" href="/css/loginphp.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Palanquin+Dark" rel="stylesheet">
 	<title>Logged Out</title>
 </head>
 <body>
-	<h1>You are now logged out.</h1>
-	<a href="/login.php"><big>CLICK HERE</big></a> TO LOG IN.
-	<br><br><br><br><br><br>
+	<h2>You are now logged out.</h2>
+	<a href="/login.php"><button class="btn btn-info btn-block login" type="submit">LOG BACK IN</button></a>
 </body>
 </html>
 
