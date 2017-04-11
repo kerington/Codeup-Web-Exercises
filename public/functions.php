@@ -1,7 +1,18 @@
-inputHas($key): returns true or false based on whether the key is available.
-inputGet($key): returns the value specified by the key, or null if the key is not set.
-escape($input): returns the input as a safely escaped string.
-Now, go back to the ping/pong and user login lessons from PHP with HTML and require the functions file you created. Use the input wrapper functions you created in place of accessing $_GET or $_POST directly. Also, use the escape function anywhere you need to echo user input.
+<?php
+
+function (inputHas($key)) {
+	if(inputHas("count")) {
+
+	}
+}
+
+fucntion (inputGet($key))
+
+function (escape($input))
+
+?>
+
+Now, go back to the ping/pong and user login lessons from PHP with HTML and require the functions file you created. Use the input wrapper functions you created in place of accessing $_GET or $_POST directly. Also, use the escape function anywhere you need to echo user input. **(strip_tags!!)
 
 Create a small templated web site.
 

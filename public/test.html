@@ -1,1 +1,10 @@
-console.log(10 % 3);
+<?php
+function pageController()
+    {
+        $data = [];
+
+        $data['message'] = 'Hello Kings';
+
+    }
+    extract(pageController());
+?>
