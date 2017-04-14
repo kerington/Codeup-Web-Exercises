@@ -1,34 +1,67 @@
-.nav {
-  margin-bottom: 0;
-  padding-left: 0;
+body {
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+}
+ 
+.nav ul {
   list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
-.nav > li {
-  position: relative;
-  display: block;
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
 }
-.nav > li > a {
-  position: relative;
-  display: block;
-  padding: 10px 15px;
-}
-.nav > li > a:hover,
-.nav > li > a:focus {
+ 
+.nav a {
   text-decoration: none;
-  background-color: #3e444c;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
 }
-.nav > li.disabled > a {
-  color: #7a8288;
+ 
+.nav a:hover {
+  background-color: #005f5f;
 }
-.nav > li.disabled > a:hover,
-.nav > li.disabled > a:focus {
-  color: #7a8288;
-  text-decoration: none;
-  background-color: transparent;
-  cursor: not-allowed;
+ 
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
 }
-.nav .open > a,
-.nav .open > a:hover,
-.nav .open > a:focus {
-  background-color: #3e444c;
-  border-color: #ffffff;
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+  /* Option 1 - Display Inline */
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+ 
+  /* Options 2 - Float
+  .nav li {
+    float: left;
+  }
+  .nav ul {
+    overflow: auto;
+    width: 600px;
+    margin: 0 auto;
+  }
+  .nav {
+    background-color: #444;
+  }
+  */
+}
