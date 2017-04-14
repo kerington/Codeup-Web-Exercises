@@ -1,53 +1,135 @@
 <!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <html>
 <head>
-  <title></title>
+	<!-- BOOTSTRAP CORE CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- CUSTOM FONTS -->
+	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<!-- CUSTOM CSS -->
+	<link rel="stylesheet" type="text/css" href="/css/personalWebsiteCSS.css">
+	<title></title>
 </head>
-<body>
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">=^.^=</a>
-    </div>
+<body class="news">
+	<header>
+	<!-- NAV BAR -->
+		<!-- <div class="nav">
+			<a id="navbar-brand" class="nav" href="#page-top">
+ -->
+		    <!-- <nav class="navbar navbar-custom navbar-fixed-top" role="navigation"> -->
+		  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="nav container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" class="nav" href="#page-top">
+                    <i class="fa fa-diamond"></i> <span class="light">K</span> MARIE
+                </a>
+            </div>
+			 <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="welcome.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="resume.html">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+		</div>
+	</nav>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-      </ul>
-    </div>
-  </div>
-  </nav>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- HEADER SECTION -->
+	<section>
+		<div class="header">
+			<header>
+				<div class="col-xs-6"></div>
+				<div class="col-xs-6">
+					<h1 class="brand-heading"><br>KERI<br>MARIE</h1>
+						<p class="intro-text">Full-Stack Web Designer
+								<br> Photographer | Cat Lover</p>
+			</header>
+		</div>
+	</section>
+		<br>
+	<!-- ABOUT SECTION -->
+	<section id="about">
+		<div class="about-section">
+			<div class="col-lg-8 col-lg-offset-2">
+				<h2>About Keri</h2>
+				<p>Cat ipsum dolor sit amet, soft kitty warm kitty little ball of furr. And sometimes switches in french and say "miaou" just because well why not eat owner's food, scratch the furniture. Chase ball of string have secret plans. Tuxedo cats always looking dapper pee in human's bed until he cleans the litter box the dog smells bad yet eat grass, throw it back up scamper so kitty power! yet poop in litter box, scratch the walls. </p>
+				<p>Unwrap toilet paper. Put butt in owner's face see owner, run in terror. Chew on cable. Chew foot meoooow! or climb a tree, wait for a fireman jump to fireman then scratch his face eats owners hair then claws head. Annoy owner until he gives you food say meow repeatedly until belly rubs, feels good stare at ceiling light destroy the blinds or find empty spot in cupboard and sleep all day for have my breakfast spaghetti yarn. </p>
+				<a href="resume.html" class="btn btn-default btn-lg">View Resume</a>
+			</div>
+		</div>
+	</section>
+	
+	<!-- PORTFOLIO SECTION -->
+	<section id="portfolio">
+		<div class="portfolio-section">
+			<div class="col-xs-1"></div>
+			<div class="col-xs-11">
+				<h2 class="potfolio"><br>Portfolio</h2>
+					<p>Lorizzle ipsizzle boofron ass black, consectetuer adipiscing phat. Funky fresh sapien mofo, the bizzle volutpizzle, suscipit quizzle, yo mamma vizzle, arcu. Pellentesque boofron sheezy. Sizzle sheezy, yo. </p>
+					<a href="portfolio.html" class="btn btn-default btn-lg">Visit Portfolio</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- CONTACT SECTION -->
+		<section id="contact" class="container content-section text-center">
+			<div class="contact-section">
+				<div class="col-lg-8 col-lg-offset-2">
+					<h2>Contact Me</h2>
+						<p>All you gotta do is <a href="mailto:KeriMarie@yahoo.com">drop a line!</a></p>
+							<ul class="list-inline banner-social-buttons">
+								<li>
+									<a href="https://github.com/kerington" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+								</li>
+								<li>
+									 <a href="https://plus.google.com/115977631268299992605" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+								</li>
+							</ul>
+				</div>
+			</div>
+		</section>
+
+	<!-- FOOTER -->
+	  <footer class="footer-section">
+	    <hr>
+	      <div class="container text-center">
+	        <p> <small> <small> Copyright &copy; Keri Marie Chesire 2017 </small> </small> </p>
+	      </div>
+	  </footer>
+
+	    <!-- jQuery -->
+	    <script src="vendor/jquery/jquery.js"></script>
+
+	    <!-- Bootstrap Core JavaScript -->
+	    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+	    <!-- Plugin JavaScript -->
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+	    <!-- Theme JavaScript -->
+	    <script src="js/grayscale.js"></script>
+
 </body>
+
 </html>

@@ -7,8 +7,8 @@
 	<div id="footer">
 		<hr>
 		<p>Created By: Keri Chesire</p>
-		<p>Contact information: <a href="mailto:kmchesire@gmail.com">
-		Drop a line!</a>.</p>
+		<p>Contact me <a href="mailto:kmchesire@gmail.com">
+		here!</a>.</p>
 	</div>
 
 </body>

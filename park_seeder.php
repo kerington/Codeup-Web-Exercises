@@ -1,79 +1,87 @@
 <?php
-
-require 'db_connect.php';
-
-$dbc->getAttribute(PDO::ATTR_CONNECTION_STATUS) . PHP_EOL;
-
-$nationalParksInformation = [
-	[
-		'name' => 'Great Smoky Mountains',
-		'location' => 'North Carolina',
-		'date_established' => '1934-06-15',
-		'area_in_acres' => 522427
-	],
-	[
-		'name' => 'Grand Canyon',
-		'location' => 'Arizona',
-		'date_established' => '1919-02-26',
-		'area_in_acres' => 1217262
-	],
-	[
-		'name' => 'Yosemite',
-		'location' => 'California',
-		'date_established' => '1890-10-01',
-		'area_in_acres' => 761266
-	],
-	[
-		'name' => 'Rocky Mountains',
-		'location' => 'Colorado',
-		'date_established' => '1915-01-26',
-		'area_in_acres' => 265769
-	],
-	[
-		'name' => 'Zion',
-		'location' => 'Utah',
-		'date_established' => '1919-11-19',
-		'area_in_acres' => 146597
-	],
-	[
-		'name' => 'Yellowstone',
-		'location' => 'Wyoming',
-		'date_established' => '1872-03-01',
-		'area_in_acres' => 2219789
-	],
-	[
-		'name' => 'Olympic',
-		'location' => 'Washington',
-		'date_established' => '1938-06-29',
-		'area_in_acres' => 922000
-	],
-	[
-		'name' => 'Acadia',
-		'location' => 'Maine',
-		'date_established' => '1916-07-08',
-		'area_in_acres' => 49052
-	],
-	[
-		'name' => 'Grand Teton',
-		'location' => 'Wyoming',
-		'date_established' => '1929-02-26',
-		'area_in_acres' => 310000
-	],
-	[
-		'name' => 'Glacier',
-		'location' => 'Montana',
-		'date_established' => '1910-05-11',
-		'area_in_acres' => 1000000
-	]
-
+require __DIR__ . '/db_connection.php';
+ 
+ 
+$parks = [
+    [
+        "name" => "Yellowstone National Park",
+        "location" => "California",
+        "description" => "National Park",
+        "date_established" => 1872,
+        "area_in_acres" => 2219791
+    ],
+    [
+        "name" => "Great Smokey Mountains",
+        "location" => "North Carolina",
+        "description" => "National Park",
+        "date_established" => 1939,
+        "area_in_acres" => 522427
+    ],
+    [
+        "name" => "Grand Canyon",
+        "location" => "Arizona",
+        "description" => "National Park",
+        "date_established" => 1919,
+        "area_in_acres" => 1217262
+    ],
+    [
+        "name" => "Acadia",
+        "location" => "Maine",
+        "description" => "National Park",
+        "date_established" => 1919,
+        "area_in_acres" => 48995
+    ],
+    [
+        "name" => "American Samoa",
+        "location" => "Samoa",
+        "description" => "National Park",
+        "date_established" => 1988,
+        "area_in_acres" => 28892
+    ],
+    [
+        "name" => "Arches",
+        "location" => "Utah",
+        "description" => "National Park",
+        "date_established" => 1971,
+        "area_in_acres" => 76678
+    ],
+    [
+        "name" => "Badlands",
+        "location" => "South Dakota",
+        "description" => "National Park",
+        "date_established" => 1978,
+        "area_in_acres" => 996263
+    ],
+    [
+        "name" => "Big Bend",
+        "location" => "Texas",
+        "description" => "National Park",
+        "date_established" => 1944,
+        "area_in_acres" => 388290
+    ],
+    [
+        "name" => "Biscanye",
+        "location" => "Florida",
+        "description" => "National Park",
+        "date_established" => 1980,
+        "area_in_acres" => 514709
+    ],
+    [
+        "name" => "Black Canyon of the Gunnison",
+        "location" => "Colorado",
+        "description" => "National Park",
+        "date_established" => 1999,
+        "area_in_acres" => 30749
+    ]
 ];
-
-foreach ($nationalParksInformation as $park)
+foreach($parks as $park)
 {
-	$query = "INSERT INTO national_parks (name, location, date_established, area_in_acres) VALUES ('{$park['name']}' ,'{$park['location']}' ,'{$park['date_established']}' ,'{$park['area_in_acres']}');";
-	$dbc->exec($query);
+    $query = "INSERT INTO national_parks (name, location, description, date_established, area_in_acres) VALUES (:name, :location, :description, :date_established, :area_in_acres)";
+    $statement = $connection->prepare($query);
+    $statement->bindValue(':name', $park['name'], PDO::PARAM_STR);
+    $statement->bindValue(':location', $park['location'], PDO::PARAM_STR);
+    $statement->bindValue(':description', $park['description'], PDO::PARAM_STR);
+    $statement->bindValue(':date_established', $park['date_established'], PDO::PARAM_INT);
+    $statement->bindValue(':area_in_acres', $park['area_in_acres'], PDO::PARAM_INT);
+    $statement->execute();
 }
-
-//foreach through this array
-
-?>
