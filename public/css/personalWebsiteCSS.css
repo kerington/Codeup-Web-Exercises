@@ -37,12 +37,13 @@ html {
 .intro-text {
     font-size: 26px;
     color: #E5DFAE;
+    margin-top: -10px;
 }
 
 #about {
     padding-top: 50px;
     text-align: center;
-    height: 750px;
+    height: 0 auto;
 }
 
 .portfolio {
@@ -189,8 +190,7 @@ a:focus {
 /*ABOUT SECTION*/
 .about-section {
   width: 100%;
-  height: 750px;
-  margin-bottom: 100px;
+  height: 440px;
   padding-left: 30px;
   padding-right: 30px;
   color: #ccc;
@@ -202,7 +202,7 @@ a:focus {
 /*PORTFOLIO SECTION*/
 .portfolio-section {
   width: 100%;
-  height: 500px;
+  height: 550px;
   padding: 20px 58% 0 0;
   margin-bottom: 100px;
   color: #E5DFAE;
