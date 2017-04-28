@@ -6,7 +6,7 @@
 <body>
 	<div id="footer">
 		<hr>
-		<p>Created By: Keri Chesire</p>
+		<p>Created By: Keri Marie Chesire</p>
 		<p>Contact me <a href="mailto:kmchesire@gmail.com">
 		here!</a>.</p>
 	</div>
