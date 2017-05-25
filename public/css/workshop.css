@@ -1,0 +1,55 @@
+body {
+	background-color: #CE7C75;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+	color: white;
+}
+
+h1 {
+	color: #243D3A;
+}
+
+.short {
+	color: #473241;
+	text-align: center;
+}
+
+.long {
+	text-align: center;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	background-color: grey;
+	text-align: center;
+	/*display: inline-block;*/
+}
+
+.boxes {
+	background-color: #CE7C75;
+	border: solid 3px #82D8D0;
+	padding: 10px;
+	max-width:350px;
+	width: 25%;
+	display: inline-block;
+	margin: auto;
+
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+		width: 90%;
+		margin: auto;
+		padding: 20px;
+		border: 
+	}
+	.boxes {
+		width: 50%;
+		max-width: 100%;
+	}
+}
+
+
+
+/*USE "vw" INSTEAD OF PX!! This helps your font resize with different devices*/

@@ -98,41 +98,7 @@ $(document).ready(function(){
         // Render the map
         var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 })();
-
-
-//Create input boxes for "Latitude" and "Longitude" and a
-//<button> that will take the values from those inputs and
-//feed them into your API request. Use Google Maps to find
-//the coordinates for different places around the world and
-//test this out.
-
-//Go back to your Google Maps API exercise. Recreate the map
-//below your 3 day forecast. Read through the documentation
-//for the Google Maps API and figure out how to allow the user
-//to drop a pin on any place on the map. Once the user drops a
-//pin, grab its coordinates and feed those into your OpenWeatherMap
-//API. Update the three day forecast with the information from
-//those coordinates (you should also get rid of your input boxes
-//at this point).
-
-
-
-//add some input fields and some kind of a button that you
-//are going to specify so that when you click the btuton,
-//the event triggered is gonna take the.val from lat and
-//.val from long and will pass it into our "getWeather"
-//function (might be named differently) b/c this will be
-//called when you click that button. Then uncommon lat and long
-
-
-// practice writing console.logs of various parts of the OpenWeatherMap object...
-    // console.log the humidity of the 2nd day
-    // console.log the humidity of all the days (maybe use .forEach?)
-    // console.log the temprature of the 3rd day in celsius
-    // console.log the temprature of the 3rd day in fahrenheit
-    // console.log all types of information you will ultimately display for a single day in the 3-day forcast div
-    // console.log all type of information you will ultimately display for all days in the 3-day forcast divs
-
+s
 
 //****TODO!!!:
 //Add name of city when refreshing lat and lon.
